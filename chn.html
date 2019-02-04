@@ -36,7 +36,7 @@
 						<a href=https://www.linkedin.com/in/jiaxin-zhang-46079613b title="领英" target="_blank" class="fa fa-linkedin-square fa-lg" aria-hidden="true" >&nbsp</a>
 						<a href=https://github.com/manymuch title="GitHub" target="_blank" class="fa fa-github fa-lg" aria-hidden="true" >&nbsp</a>
 						<a href=images/wechet.png title="微信" target="_blank" class="fa fa-weixin fa-lg" aria-hidden="true" >&nbsp</a>
-						<a href=download/Resume_JiaxinZhang.pdf title="简历" target="_blank" class="fa fa-file-text fa-lg" aria-hidden="true" ></a>
+						<a href=download/JiaxinZhang_Resume.pdf title="简历" target="_blank" class="fa fa-file-text fa-lg" aria-hidden="true" ></a>
 
 
 					</header>
@@ -58,7 +58,7 @@
 			交流经历
 		</a></li>
 
-		<li><a href="https://manymuch.github.io">English</a></li>
+		<li><a href="http://jiaxin-zhang.com">English</a></li>
 						</ul>
 					</nav>
 				</section>
@@ -78,7 +78,7 @@
 										波士顿大学
 										</strong>
 									</div>
-									<div style = "float: right">2018年9月-2020年5月</div>
+									<div style = "float: right">2018年9月-2019年12月</div>
 								</div>
 								<br>
 								<div style="text-indent: 2em;">
@@ -101,10 +101,7 @@
 									<br>
 								</div>
 								<div style="text-indent: 2em;">
-								少年班学院
-								</div>
-								<div style="text-indent: 2em;">
-								物理电子学
+								少年班学院 物理电子学
 								</div>
 							</div>
 							</section>
@@ -156,31 +153,32 @@
 			         </header>
 							<div class="features">
 									<article>
-										<a href="#" class="image"><img src="images/arm_control.png" alt=""/>
+										<a class="image"><img src="images/arm_control.png" alt=""/>
 										<h5 align="center">Segementation using PointNet</h5>
 										</a>
 											    <div class="inner">
-											      <h4 title="Fall 2018">Robotic Arm Control in Gazebo</h4>
+											      <h4 title="Fall 2018">点云环境识别和机械手臂控制</h4>
 													<ul>
-									  					<li>Designed and Built a Robotic Arm with ROS in gazebo with a team of four.</li>
-									  					<li>Implemented PCL and PointNet to process point cloud data for semantic segmentation.</li>
-									  					<li>Implemented motion planning and control for the robot with Moveit.</li>
-									  					<li>Integrated Alexa interface that allowed users to control Robotic Arm with their voice.</li>
+									  					<li>在Gazebo环境中使用ROS搭建机械手臂</li>
+									  					<li>使用PCL和PointNet对点云数据进行处理并识别，实现点云语义分割</li>
+									  					<li>使用Moveit进行机械手臂的路径规划和避障</li>
+									  					<li>集成了Alexa语音接口，实现语音控制机械手</li>
 													</ul>
 
 												</div>
 									</article>
 									<article>
-										<a href="#" class="image"><img src="images/fpga.gif" alt=""/>
+										<a class="image"><img src="images/fpga.gif" alt=""/>
 										<h5 align="center">Energy Efficiency</h5>
 										</a>
 											    <div class="inner">
 											      <h4 title=" Spring 2018"> 基于FPGA的神经网络加速 </h4>
 
 													<ul>
-									  					<li>Implemented Binarized Convolutional Neural Networks(BNN) in a FPGA device(Xilinx ZedBoard).</li>
-									  					<li>Achieved 93% Accuracy on ASL FingerSpelling dataset.</li>
-									  					<li>Achieved 70 frames/secs processing speed for a 9-layer-BNN within only 2.4W power supply.</li>
+									  					<li>在ZedBoard上实现二值化卷积网络推断</li>
+									  					<li>在手势识别ASL数据库上达到93%准确率</li>
+									  					<li>九层BNN网络上达到每秒70帧的处理速度</li>
+															<li>整机功耗仅为2.4瓦</li>
 													</ul>
 
 												</div>
@@ -189,57 +187,56 @@
 										<a class="image"><img src="images/loss.png" alt=""/>
 										</a>
 
-											    <div class="inner">
+											    <div id="gan" class="inner">
 											      <h4 title="Summer 2017">二值化神经网络的研究(GANs)</h4>
 
 													<ul>
-									  					<li>Explored and designed Partial Binarized algorithm for Deconvolution-Based Generators.</li>
-									  					<li>Achieved 25x saving in memory and 1.9x speed up with little performance loss.</li>
-									  					<li>Published as second author.</li>
-															<li><a href="https://arxiv.org/pdf/1802.09153.pdf" target="_blank">Click here to see the paper</a></li>
+									  					<li>研究生成对抗网络的二值化加速</li>
+									  					<li>保证准确率的同时达到约2倍的推断速度提升且内存需求下降25倍</li>
+									  					<li>以第二作者发表
+																<a href=https://arxiv.org/pdf/1802.09153.pdf" title="查看PDF文章" target="_blank" class="fa fa-file-pdf-o fa-lg" aria-hidden="true" ></a>
+															</li>
 													</ul>
 
 												</div>
 									</article>
 									<article>
-										<a href="#" class="image"><img src="images/eye_tracking.gif" alt=""/>
+										<a  class="image"><img src="images/eye_tracking.gif" alt=""/>
 										</a>
 											    <div class="inner">
 											      <h4 title="2015年-2016年">眼动跟踪系统</h4>
 
 													<ul>
-									  					<li>Designed and built a system with helmet, Lidar and camera that track the user’s gaze point.</li>
-									  					<li>Used infrared camera integrated in the helmet to catch eye’s movements.</li>
-									  					<li>Implemented sensor fusion algorithms for IMU and Vive Lighthouse to get the helmet’s 6DoF.</li>
-														<li>Controlled a Pan-Tilt Camera to follow the user’s gaze point.</li>
-														<li>Designed and built auto calibration system for the helmet and pan-tilt camera.</li>
+									  					<li>使用头盔,激光雷达和摄像头识别人眼凝视点</li>
+									  					<li>使用红外摄像头识别人眼虹膜位置</li>
+									  					<li>融合头盔上的IMU和外部激光雷达数据得到头盔坐标和旋转矩阵</li>
+														<li>同时配合外部云台跟踪人眼凝视点目标</li>
 													</ul>
 
 												</div>
 									</article>
 									<article>
-										<a href="#" class="image"><img src="images/mendocino.gif" alt="" width="118%" /></a>
+										<a  class="image"><img src="images/mendocino.gif" alt="" width="118%" /></a>
 										<div class="inner">
 											<h4 title="Spring 2015">门多西诺电机</h4>
 
 											 		<ul>
-									  					<li>Built a Mendocino Motor with self-designed 3D printed parts.</li>
-									  					<li>The whole rotor can levitate in the air with the help of the strong permanent magnets</li>
-									  					<li>Rotates smoothly under the sun.</li>
+									  					<li>3D打印件制作门多西诺电机.</li>
+									  					<li>电机在永磁体下悬浮，在光照下持续旋转.</li>
 													</ul>
 									   </div>
 									</article>
 									<article>
-										<a href="#" class="image"><img src="images/gaussgun.png" alt="" />
-																	  <h5 style="color:#5F82B5">Blue Line: theoritical estimation</h5>
-																	  <h5 style="color: #FF0000">Red Dots: real data</h5></a>
+										<a class="image"><img src="images/gaussgun.png" alt="" />
+																	  <h5 style="color:#5F82B5;display: inline;">蓝线: 理论推导&nbsp&nbsp&nbsp</h5>
+																	  <h5 style="color: #FF0000;display: inline;">&nbsp&nbsp&nbsp红点: 实测数据</h5></a>
 																    <div class="inner">
 																      <h4 title="Spring 2015">高斯枪速度数值模拟</h4>
 
 											 		<ul>
-									  					<li>Built the physical model for a mutil-level induction coilgun</li>
-									  					<li>Figured out the theoretically optimal initial states</li>
-									  					<li>Verified with real datas by measuring the ejecting speed of the coilgun</li>
+									  					<li>计算多级高斯枪的物理模型</li>
+									  					<li>找出其理论最优起始点</li>
+									  					<li>实测起始点和射速的关系，并与理论吻合</li>
 													</ul>
 															        </div>
 									 </article>
@@ -256,60 +253,56 @@
 								<div class="major">
 									<div style = "float: left">
 										<strong>
-										Research Assistant
+										暑研交流
 										</strong>
-										University of Notre Dame
+										圣母大学
 									</div>
-									<div style = "float: right">Summer 2017</div>
+									<div style = "float: right">2017 夏季</div>
 								</div>
 								<br>
 								<div style="text-indent: 2em;">
 									<ur>
-										<li>Explored and designed Binarized algorithm for Deconvolution-Based Generators. </li>
-										<li>Implemented and processed all experiments data.</li>
-										<li><a href="https://arxiv.org/pdf/1802.09153.pdf" target="_blank">Click here to see the paper</a></li>
+										<li>研究反卷积(GAN)的二值化算法. </li>
+										<li>详见<a href="#gan">二值化神经网络的研究</a>.</li>
+
 									</ur>
 								</div>
 								<br>
 								<div>
 									<div style = "float: left">
 										<strong>
-										Teaching Assistant
+										暑期交换
 										</strong>
-										Peking University
+										北京大学
 									</div>
-									<div style = "float: right">Summer 2016</div>
+									<div style = "float: right">2016 夏季</div>
 								</div>
 								<br>
 								<div style="text-indent: 2em;">
 									<ur>
-										<li>Conducted weekly lectures in Calculus for an Economics course. </li>
+										<li>为微观经济学课程辅助讲解微积分内容. </li>
 									</ur>
 								</div>
 								<br>
 								<div>
 								<div style = "float: left">
 										<strong>
-										Research Assistant
+										学期交换
 										</strong>
-										National Tsing Hua University
+										台湾清华大学
 									</div>
-									<div style = "float: right">Spring 2016</div>
+									<div style = "float: right">2016 春季</div>
 								</div>
 								<br>
 								<div style="text-indent: 2em;">
 									<ur>
-										<li>Exchange Students in Department of Physics, <a href="download/NTHU.pdf" target="_blank">See Transcript</a></li>
-										<li>Conducted experiments and explored modelling for paper twisting patterns. </li>
+										<li>在物理系洪在明教授实验室交换 <a href="download/NTHU.pdf" target="_blank">成绩单</a></li>
 									</ur>
 								</div>
 								<br>
 								</div>
 							</div>
 						</section>
-
-			<!-- Footer -->
-				<section id="footer"></section>
 
 		</div>
 	</body>

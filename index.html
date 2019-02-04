@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Jiaxin Zhang</title> 
+		<title>Jiaxin Zhang</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -12,9 +12,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<!-- <style type="text/css">
-			a:hover {color: #0099CC;text-decoration: none}
-	  </style> -->
+		<script src="js/popup.js"></script>
 	<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -32,13 +30,13 @@
 					<header>
 							<span class="image avatar"><img src="images/icon3.jpg" alt="" /></span>
 					        <h1 id="logo">Jiaxin Zhang</h1>
-						<p><a  href=mailto:jiaxin@bu.edu> jiaxin@bu.edu</a>
+						<p><a class="email" href=mailto:jiaxin@bu.edu> jiaxin@bu.edu</a>
 						<br>
-						<a title="Cell Phone"> 617-459-0876</a>
+						<a class="phone" title="Cell Phone"> 617-459-0876</a>
 						</p>
 						<a href=https://www.linkedin.com/in/jiaxin-zhang-46079613b title="LinkedIn" target="_blank" class="fa fa-linkedin-square fa-lg" aria-hidden="true" >&nbsp</a>
 						<a href=https://github.com/manymuch title="GitHub" target="_blank" class="fa fa-github fa-lg" aria-hidden="true" >&nbsp</a>
-						<a href=images/wechet.png title="Wechat" target="_blank" class="fa fa-weixin fa-lg" aria-hidden="true" >&nbsp</a>
+						<a href="# "id="contact_weixin" onclick="openWindow(this)" title="Wechat" class="fa fa-weixin fa-lg" aria-hidden="true" >&nbsp</a>
 						<a href=download/JiaxinZhang_Resume.pdf title="Resume" target="_blank" class="fa fa-file-text fa-lg" aria-hidden="true" ></a>
 
 
@@ -68,7 +66,13 @@
 
 			<!-- Main -->
 				<div id="main">
-
+					<div id="light_qq" class="white_content">
+					    <img src='images/wechet.png' />
+					</div>
+					<div id="light_weixin" class="white_content">
+					    <img src='images/wechet.png' />
+					</div>
+					<div id="fade" class="black_overlay"  onClick="closeWindow()"></div>
 					<!-- One -->
 						<section id="one">
 							<div class="container">
@@ -147,6 +151,12 @@
 
 
 
+
+
+
+
+
+
 							</div>
 					  </section>
 
@@ -163,7 +173,7 @@
 										<h5 align="center">Segementation using PointNet</h5>
 										</a>
 											    <div class="inner">
-											      <h4 title="Fall 2018">Robotic Arm Control in Gazebo</h4>
+											      <h4 title="Fall 2018"><a href="https://github.com/scottlx/Wheelchair-Arm-Control" target="_blank" title="GitHub Page">Robotic Arm Control in Gazebo</a></h4>
 													<ul>
 									  					<li>Designed and Built a Robotic Arm with ROS in gazebo with a team of four.</li>
 									  					<li>Implemented PCL and PointNet to process point cloud data for semantic segmentation.</li>
@@ -171,7 +181,6 @@
 									  					<li>Integrated Alexa interface that allowed users to control Robotic Arm with their voice.</li>
 															<li>See demo video here <a href="https://youtu.be/ml04Gt5j70s" title="Demo Video" target="_blank" class="fa fa-youtube-play fa-lg" aria-hidden="true" ></a></li>
 													</ul>
-
 												</div>
 									</article>
 									<article>
