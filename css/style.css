@@ -510,7 +510,7 @@
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: 23em;
+		width: 21em;
 		right: 0;
 	}
 
@@ -637,7 +637,7 @@
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 6em 5em 4em 5em;
 		}
 
 		#main > section:first-child {
