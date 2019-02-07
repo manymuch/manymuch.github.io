@@ -2,26 +2,23 @@
 <html>
 	<head>
 		<title>张家馨</title>
+		<link rel="icon" href="images/icon.ico"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<meta name="description" content="Jiaxin Zhang homepage" />
+		<meta name="keywords" content="Jiaxin" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrollzer.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<!-- <style type="text/css">
-			a:hover {color: #0099CC;text-decoration: none}
-	  </style> -->
+		<script src="js/wechat.js"></script>
 	<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 			<link rel="stylesheet" href="css/font-awesome.min.css">
 	</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 
 	<body>
@@ -32,18 +29,25 @@
 					<header>
 							<span class="image avatar"><img src="images/icon3.jpg" alt="" /></span>
 					        <h1 id="logo">张家馨</h1>
-						<p><a href=mailto:jiaxin@bu.edu>jiaxin@bu.edu</a></p>
+						<li style="list-style-type:none;">
+							<a class="email" href=mailto:jiaxin@bu.edu> jiaxin@bu.edu</a>
+						</li>
+						<li style="list-style-type:none;">
+							 <a class="phone" title="国内电话"> 130 7556 1912</a>
+					 </li>
 						<a href=https://www.linkedin.com/in/jiaxin-zhang-46079613b title="领英" target="_blank" class="fa fa-linkedin-square fa-lg" aria-hidden="true" >&nbsp</a>
 						<a href=https://github.com/manymuch title="GitHub" target="_blank" class="fa fa-github fa-lg" aria-hidden="true" >&nbsp</a>
-						<a href=images/wechet.png title="微信" target="_blank" class="fa fa-weixin fa-lg" aria-hidden="true" >&nbsp</a>
+						<a href="javascript:void(0)" onMouseOut="hideImg()"  onmouseover="showImg()" class="fa fa-weixin fa-lg" aria-hidden="true" >&nbsp</a>
 						<a href=download/JiaxinZhang_Resume.pdf title="简历" target="_blank" class="fa fa-file-text fa-lg" aria-hidden="true" ></a>
-
+						<div id="wxImg" style="display:none;height:50px;back-ground:#f00;position: absolute;z-index:9999">
+										<span><img src="images\wechet.png" width="200" height="200" border="0" alt=""></span>
+						</div>
 
 					</header>
 					<nav id="nav">
 						<ul>
 		<li><a href="#one"class="active">
-			教育经历
+				教育经历
 		</a></li>
 
 		<li><a href="#two">
@@ -64,8 +68,7 @@
 				</section>
 
 			<!-- Main -->
-				<div id="main">
-
+			<div id="main">
 					<!-- One -->
 						<section id="one">
 							<div class="container">
@@ -88,7 +91,7 @@
 								Robotics Specialization
 								</div>
 								<div style="text-indent: 2em;">
-									GPA: 3.8/4.0 <a href = "download/BU_Transcript.pdf">成绩单</a>
+									目前GPA: 3.8/4.0
 								</div>
 								<br>
 								<div>
@@ -129,18 +132,15 @@
 									 <strong>
 									 工具:
 									 </strong>
-									 Git, Makefile, 赛灵思 SDSoC and VivadoHLS
+									 Git, Makefile, Xilinx SDSoC and VivadoHLS
 								 </div>
 								 <div>
 									 <strong>
 									 开发经验:
 									 </strong>
-									 ARM Cortex-M4 based on Kinetis K60, 赛灵思 ZedBoard
+									 ARM Cortex-M4 based on Kinetis K60, Xilinx ZedBoard
 								 </div>
 							 </div>
-
-
-
 							</div>
 					  </section>
 
@@ -157,28 +157,27 @@
 										<h5 align="center">Segementation using PointNet</h5>
 										</a>
 											    <div class="inner">
-											      <h4 title="Fall 2018">点云环境识别和机械手臂控制</h4>
+											      <h4 title="Fall 2018"><a href="https://github.com/scottlx/Wheelchair-Arm-Control" target="_blank" title="GitHub Page">点云环境识别和机械手臂控制</a></h4>
 													<ul>
-									  					<li>在Gazebo环境中使用ROS搭建机械手臂</li>
-									  					<li>使用PCL和PointNet对点云数据进行处理并识别，实现点云语义分割</li>
-									  					<li>使用Moveit进行机械手臂的路径规划和避障</li>
-									  					<li>集成了Alexa语音接口，实现语音控制机械手</li>
+														<li>在Gazebo环境中使用ROS搭建机械手臂</li>
+														<li>使用PCL和PointNet对点云数据进行处理并识别，实现点云语义分割</li>
+														<li>使用Moveit进行机械手臂的路径规划和避障</li>
+														<li>集成了Alexa语音接口，实现语音控制机械手</li>
+															<li>点击查看视频 <a href="https://youtu.be/ml04Gt5j70s" title="Demo Video" target="_blank" class="fa fa-youtube-play fa-lg" aria-hidden="true" ></a></li>
 													</ul>
-
 												</div>
 									</article>
 									<article>
 										<a class="image"><img src="images/fpga.gif" alt=""/>
-										<h5 align="center">Energy Efficiency</h5>
 										</a>
 											    <div class="inner">
 											      <h4 title=" Spring 2018"> 基于FPGA的神经网络加速 </h4>
 
 													<ul>
-									  					<li>在ZedBoard上实现二值化卷积网络推断</li>
-									  					<li>在手势识别ASL数据库上达到93%准确率</li>
-									  					<li>九层BNN网络上达到每秒70帧的处理速度</li>
-															<li>整机功耗仅为2.4瓦</li>
+														<li>在ZedBoard上实现二值化卷积网络推断</li>
+														<li>在手势识别ASL数据库上达到93%准确率</li>
+														<li>九层BNN网络上达到每秒70帧的处理速度</li>
+														<li>整机功耗仅为2.4瓦</li>
 													</ul>
 
 												</div>
@@ -191,38 +190,36 @@
 											      <h4 title="Summer 2017">二值化神经网络的研究(GANs)</h4>
 
 													<ul>
-									  					<li>研究生成对抗网络的二值化加速</li>
-									  					<li>保证准确率的同时达到约2倍的推断速度提升且内存需求下降25倍</li>
-									  					<li>以第二作者发表
-																<a href=https://arxiv.org/pdf/1802.09153.pdf" title="查看PDF文章" target="_blank" class="fa fa-file-pdf-o fa-lg" aria-hidden="true" ></a>
-															</li>
+														<li>研究生成对抗网络的二值化加速</li>
+														<li>保证准确率的同时达到约2倍的推断速度提升且内存需求下降25倍</li>
+									  				<li>以第二作者发表 <a href="https://arxiv.org/pdf/1802.09153.pdf" title="PDF paper" target="_blank" class="fa fa-file-pdf-o fa-lg" aria-hidden="true" ></a></li>
 													</ul>
 
 												</div>
 									</article>
 									<article>
-										<a  class="image"><img src="images/eye_tracking.gif" alt=""/>
+										<a class="image"><img src="images/eye_tracking.gif" alt=""/>
 										</a>
 											    <div class="inner">
-											      <h4 title="2015年-2016年">眼动跟踪系统</h4>
+											      <h4 title="2015-2016">眼动跟踪系统</h4>
 
 													<ul>
-									  					<li>使用头盔,激光雷达和摄像头识别人眼凝视点</li>
-									  					<li>使用红外摄像头识别人眼虹膜位置</li>
-									  					<li>融合头盔上的IMU和外部激光雷达数据得到头盔坐标和旋转矩阵</li>
-														<li>同时配合外部云台跟踪人眼凝视点目标</li>
+														<li>使用头盔,激光雷达和摄像头识别人眼凝视点</li>
+														<li>使用红外摄像头识别人眼虹膜位置</li>
+														<li>融合头盔上的IMU和外部激光雷达数据得到头盔坐标和旋转矩阵</li>
+													  <li>同时配合外部云台跟踪人眼凝视点目标</li>
 													</ul>
 
 												</div>
 									</article>
 									<article>
-										<a  class="image"><img src="images/mendocino.gif" alt="" width="118%" /></a>
+										<a class="image"><img src="images/mendocino.gif" alt="" width="118%" /></a>
 										<div class="inner">
 											<h4 title="Spring 2015">门多西诺电机</h4>
 
 											 		<ul>
-									  					<li>3D打印件制作门多西诺电机.</li>
-									  					<li>电机在永磁体下悬浮，在光照下持续旋转.</li>
+									  					<li>3D打印件制作门多西诺电机</li>
+									  					<li>电机在永磁体下悬浮，在光照下持续旋转</li>
 													</ul>
 									   </div>
 									</article>
@@ -263,8 +260,7 @@
 								<div style="text-indent: 2em;">
 									<ur>
 										<li>研究反卷积(GAN)的二值化算法. </li>
-										<li>详见<a href="#gan">二值化神经网络的研究</a>.</li>
-
+										<li>详见<a href="#gan">二值化神经网络的研究</a></li>
 									</ur>
 								</div>
 								<br>
@@ -280,7 +276,7 @@
 								<br>
 								<div style="text-indent: 2em;">
 									<ur>
-										<li>为微观经济学课程辅助讲解微积分内容. </li>
+										<li>为微观经济学课程辅助讲解微积分内容</li>
 									</ur>
 								</div>
 								<br>
@@ -296,14 +292,13 @@
 								<br>
 								<div style="text-indent: 2em;">
 									<ur>
-										<li>在物理系洪在明教授实验室交换 <a href="download/NTHU.pdf" target="_blank">成绩单</a></li>
+										<li>在物理系洪在明教授实验室交换</li>
 									</ur>
 								</div>
 								<br>
 								</div>
 							</div>
 						</section>
-
 		</div>
 	</body>
 </html>
