@@ -9,7 +9,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$size-header: 23em;
+$size-header: 24em;
 
 /* Basic */
 
@@ -837,6 +837,84 @@ $size-header: 23em;
 			}
 		}
 	}
+
+/* Timeline */
+
+	.timeline-entry {
+		align-items: center;
+		display: grid;
+		grid-template-columns: 5.25em minmax(0, 1fr);
+		column-gap: 1em;
+		margin: 0 0 $size-element-margin 0;
+	}
+
+	.timeline-body {
+		min-width: 0;
+	}
+
+	.timeline-entry.logo-top {
+		align-items: start;
+	}
+
+	.timeline-entry.no-logo {
+		display: block;
+	}
+
+	.timeline-entry.employment-entry,
+	.timeline-entry.employment-no-logo {
+		grid-template-columns: 7em minmax(0, 1fr);
+	}
+
+	.timeline-entry.employment-no-logo {
+		display: grid;
+
+		&:before {
+			content: '';
+		}
+	}
+
+	.timeline-entry.nvidia-entry {
+		grid-template-columns: 7em minmax(0, 1fr);
+	}
+
+	.timeline-heading {
+		align-items: center;
+		display: flex;
+		gap: 1em;
+		justify-content: space-between;
+	}
+
+	.timeline-title {
+		line-height: 1.4em;
+		min-width: 0;
+	}
+
+	.timeline-logo {
+		height: 3.8em;
+		justify-self: center;
+		object-fit: contain;
+		width: 4.4em;
+	}
+
+	.timeline-logo.nvidia-logo {
+		height: 6.4em;
+		width: 6.6em;
+	}
+
+	.timeline-logo.school-logo {
+		height: 4.5em;
+		width: 4.8em;
+	}
+
+	.timeline-when {
+		color: $color-fg-bold;
+		flex: 0 0 auto;
+		white-space: nowrap;
+	}
+
+	.timeline-details {
+		margin: 0.45em 0 0 0;
+	}
 	
 /* Header */
 
@@ -878,6 +956,28 @@ $size-header: 23em;
 			}
 		}
 
+		.wechat-popover {
+			display: inline-block;
+			position: relative;
+		}
+
+		#wxImg {
+			display: none;
+			left: 100%;
+			padding: 0.45em 0 0 0.45em;
+			position: absolute;
+			top: 100%;
+			z-index: 9999;
+
+			img {
+				background: #ffffff;
+				border-radius: $size-border-radius;
+				box-shadow: 0 0.35em 1em rgba(0, 0, 0, 0.18);
+				display: block;
+				max-width: none;
+			}
+		}
+
 		> header {
 			padding: 3em;
 			
@@ -890,6 +990,7 @@ $size-header: 23em;
 			h1 {
 				font-size: 1.75em;
 				margin: 0;
+				white-space: nowrap;
 			}
 			
 			p {

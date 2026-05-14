@@ -73,7 +73,7 @@
 			line-height: 44px;
 			padding: 0 1em;
 			width: 100%;
-			text-align: left;
+			text-align: right;
 		}
 
 		#titleBar .toggle {
@@ -82,7 +82,7 @@
 			position: absolute;
 			top: 0;
 			width: 6em;
-			right: 0;
+			left: 0;
 		}
 
 			#titleBar .toggle:before {
@@ -95,7 +95,7 @@
 			}
 
 			#titleBar .toggle:before {
-				background: /*#4a60ca*/#4a60ca;
+				background: #76B900;
 				color: #ffffff;
 				content: '\f0c9';
 				display: block;
@@ -106,10 +106,10 @@
 				text-align: center;
 				top: 0;
 				width: 64px;
-				right: 0;
+				left: 0;
 			}
 
 	#sidePanel {
-		background: /*#4a60ca*/ #4a60ca;
-		color: #d1ddf1;
+		background: #76B900;
+		color: #f1f8e8;
 	}

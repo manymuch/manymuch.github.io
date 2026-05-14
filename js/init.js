@@ -3,9 +3,9 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			global: { href: 'css/style.css', containers: '45em', grid: { gutters: ['2em', 0] } },
+			global: { href: 'css/style.css', containers: '58em', grid: { gutters: ['2em', 0] } },
 			xlarge: { media: '(max-width: 4096px)', href: 'css/style-xlarge.css' },
-			large: { media: '(max-width: 1980px)', href: 'css/style-large.css', containers: '42em', grid: { gutters: ['1.5em', 0] }, viewport: { scalable: false } },
+			large: { media: '(max-width: 1980px)', href: 'css/style-large.css', containers: '56em', grid: { gutters: ['1.5em', 0] }, viewport: { scalable: false } },
 			medium: { media: '(max-width: 1024px)', href: 'css/style-medium.css', containers: '85%!', grid: { zoom: 2 } },
 		  small: { media: '(max-width: 736px)', href: 'css/style-small.css', containers: '90%!', grid: { gutters: ['1.25em', 0] } },
 		  xsmall: { media: '(max-width: 480px)', href: 'css/style-xsmall.css', grid: { zoom: 3 } }
@@ -26,11 +26,11 @@
 				sidePanel: {
 					breakpoints: 'medium',
 					hidden: true,
-					width: { small: 275, medium: '20em' },
+					width: { small: 275, medium: '24em' },
 					height: '100%',
 					animation: 'pushX',
-					position: 'top-right',
-					side: 'right',
+					position: 'top-left',
+					side: 'left',
 					orientation: 'vertical',
 					clickToHide: true,
 					html: '<div data-action="moveElement" data-args="header"></div>'

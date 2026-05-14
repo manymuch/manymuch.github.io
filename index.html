@@ -2,10 +2,10 @@
 <html>
 
 <head>
-	<title>Jiaxin Zhang</title>
+	<title>Jiaxin (Jimmy) Zhang</title>
 	<link rel="icon" href="images/icon.ico" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="Jiaxin Zhang homepage" />
+	<meta name="description" content="Jiaxin (Jimmy) Zhang homepage" />
 	<meta name="keywords" content="Jiaxin" />
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.scrollzer.min.js"></script>
@@ -28,8 +28,8 @@
 		<!-- Header -->
 		<section id="header" class="skel-layers-fixed">
 			<header>
-				<span class="image avatar"><img src="images/icon3.jpg" alt="" /></span>
-				<h1 id="logo">Jiaxin Zhang</h1>
+				<span class="image avatar"><img src="images/avatar.jpeg" alt="" /></span>
+				<h1 id="logo">Jiaxin (Jimmy) Zhang</h1>
 				<li style="list-style-type:none;">
 					<a class="email" href=mailto:zjx219@gmail.com> zjx219@gmail.com</a>
 				</li>
@@ -42,13 +42,13 @@
 					aria-hidden="true">&nbsp</a>
 				<a href=https://scholar.google.com/citations?hl=en&user=qx-mI6oAAAAJ title="Google Scholar" target="_blank" class="fa fa-google fa-lg"
 					aria-hidden="true">&nbsp</a>
-				<a href="javascript:void(0)" onMouseOut="hideImg()" onmouseover="showImg()" class="fa fa-weixin fa-lg"
-					aria-hidden="true">&nbsp</a>
-				<a href=download/Resume_JiaxinZhang.pdf title="Resume" target="_blank" class="fa fa-file-text fa-lg"
-					aria-hidden="true"></a>
-				<div id="wxImg" style="display:none;height:50px;back-ground:#f00;position: absolute;z-index:9999">
-					<span><img src="images\wechet.png" width="200" height="200" border="0" alt=""></span>
-				</div>
+				<span class="wechat-popover" onMouseOut="hideImg()" onmouseover="showImg()">
+					<a href="javascript:void(0)" class="fa fa-weixin fa-lg"
+						aria-hidden="true">&nbsp</a>
+					<span id="wxImg">
+						<img src="images\wechet.png" width="200" height="200" border="0" alt="">
+					</span>
+				</span>
 
 			</header>
 			<nav id="nav">
@@ -69,8 +69,8 @@
 							Projects
 						</a></li>
 
-					<li><a href="#five">
-							Skills
+					<li><a href="#six">
+							Outside Work
 						</a></li>
 				</ul>
 			</nav>
@@ -83,48 +83,61 @@
 					<header class="major" id="#one">
 						<h2>Employment</h2>
 					</header>
-					<div>
-						<div style="float: left">
-							<strong>
-								Algorithm Engineer
-							</strong>
-							Horizon Robotics, Beijing, China
-						</div>
-						<div style="float: right">Feb. 2020 - Jan. 2024</div>
-					</div>
-					<br>
-					<div>
-						<ul>
-						<li>Developed a high-accuracy monocular visual odometry algorithm 
-							<a href=https://arxiv.org/abs/2103.10029 title="arXiv link" target="_blank"aria-hidden="true">(ICRA 2021)</a>.</li>
-							<li>Built auto-labeling system for autonomous driving 
-								<a href=https://arxiv.org/abs/2309.11754 title="arXiv link" target="_blank"aria-hidden="true">(ICRA 2024)</a></li>
-							<ul>
-								<li>Support both LiDAR-based and pure-vision mode. </li>
-								<li>Maintain the driving dataset at PB level. </li>
-								<li>Develop with complete unit test and CICD.</li>
+					<div class="timeline-entry nvidia-entry">
+						<img class="timeline-logo nvidia-logo" src="images/logo-nvidia.svg" alt="Nvidia logo" />
+						<div class="timeline-body">
+							<div class="timeline-heading">
+								<div class="timeline-title">
+									<strong>Staff Engineer</strong>
+									Nvidia, Shanghai, China
+								</div>
+								<div class="timeline-when">Jul. 2024 - Present</div>
+							</div>
+							<ul class="timeline-details">
+								<li>Developing offline auto-labeling system for L2++/L4 autonomous driving.</li>
 							</ul>
-						</ul>
-					</div>
-					<br>
-
-					<div>
-						<div style="float: left">
-							<strong>
-								Algorithm Engineer Intern
-							</strong>
-							Horizon Robotics, CA, United States
 						</div>
-						<div style="float: right">Summer 2019</div>
 					</div>
-					<br>
-					<div>
-						<ul>
-							<li>Designed an eye gaze data collection pipeline for Driver Monitoring Systems.</li>
-							<li>Developed a real-time eye gaze estimation algorithm based on single IR camera.</li>
-						</ul>
+
+					<div class="timeline-entry employment-entry logo-top">
+						<img class="timeline-logo" src="images/logo-horizon-robotics.png" alt="Horizon Robotics logo" />
+						<div class="timeline-body">
+							<div class="timeline-heading">
+								<div class="timeline-title">
+									<strong>Algorithm Engineer</strong>
+									Horizon Robotics, Beijing, China
+								</div>
+								<div class="timeline-when">Feb. 2020 - Jan. 2024</div>
+							</div>
+							<ul class="timeline-details">
+								<li>Developed a high-accuracy monocular visual odometry algorithm 
+									<a href=https://arxiv.org/abs/2103.10029 title="arXiv link" target="_blank"aria-hidden="true">(ICRA 2021)</a>.</li>
+								<li>Built auto-labeling system for autonomous driving 
+									<a href=https://arxiv.org/abs/2309.11754 title="arXiv link" target="_blank"aria-hidden="true">(ICRA 2024)</a></li>
+								<ul>
+									<li>Support both LiDAR-based and pure-vision mode. </li>
+									<li>Maintain the driving dataset at PB level. </li>
+									<li>Develop with complete unit test and CICD.</li>
+								</ul>
+							</ul>
+						</div>
 					</div>
-					<br>
+
+					<div class="timeline-entry no-logo employment-no-logo">
+						<div class="timeline-body">
+							<div class="timeline-heading">
+								<div class="timeline-title">
+									<strong>Intern</strong>
+									Horizon Robotics, CA, United States
+								</div>
+								<div class="timeline-when">Summer 2019</div>
+							</div>
+							<ul class="timeline-details">
+								<li>Designed an eye gaze data collection pipeline for Driver Monitoring Systems.</li>
+								<li>Developed a real-time eye gaze estimation algorithm based on single IR camera.</li>
+							</ul>
+						</div>
+					</div>
 
 				</div>
 			</section>
@@ -135,30 +148,33 @@
 						<h2>Education</h2>
 					</header>
 					<div class="major">
-						<div>
-							<div style="float: left">
-								<strong>
-									Boston University
-								</strong>
+						<div class="timeline-entry">
+							<img class="timeline-logo school-logo" src="images/logo-boston-university.svg" alt="Boston University logo" />
+							<div class="timeline-body">
+								<div class="timeline-heading">
+									<div class="timeline-title">
+										<strong>Boston University</strong>
+									</div>
+									<div class="timeline-when">Sept.2018 - Dec 2019</div>
+								</div>
+								<div class="timeline-details">
+									Master of Science in Electrical and Computer Engineering
+								</div>
 							</div>
-							<div style="float: right">Sept.2018 - Dec 2019</div>
 						</div>
-						<br>
-						<div style="text-indent: 2em;">
-							Master of Science in Electrical and Computer Engineering
-						</div>
-						<br>
-						<div>
-							<div style="float: left">
-								<strong>
-									University of Science and Technology of China
-								</strong>
+						<div class="timeline-entry">
+							<img class="timeline-logo school-logo" src="images/logo-ustc.svg" alt="University of Science and Technology of China logo" />
+							<div class="timeline-body">
+								<div class="timeline-heading">
+									<div class="timeline-title">
+										<strong>University of Science and Technology of China</strong>
+									</div>
+									<div class="timeline-when">Sept. 2014 - Jul. 2018</div>
+								</div>
+								<div class="timeline-details">
+									Bachelor of Science in Physical Electronics, School of the Gifted Young
+								</div>
 							</div>
-							<div style="float: right">Sept. 2014 - Jul. 2018</div>
-							<br>
-						</div>
-						<div style="text-indent: 2em;">
-							Bachelor of Science in Physical Electronics, School of the Gifted Young
 						</div>
 					</div>
 			</section>
@@ -234,40 +250,17 @@
 				</div>
 			</section>
 
-			<section id="five">
-				<div class="container">
-					<header class="major" id="#five">
-						<h2>Skills</h2>
-					</header>
-					<div class="major">
-						<div>
-							<strong>Programming Languages:</strong>
-							Python, C++
-						</div>
-						<div>
-							<strong>Frameworks:</strong>
-							PyTorch, OpenCV, ROS, Eigen, PCL
-						</div>
-						<div>
-							<strong>keywords:</strong>
-							SLAM, SfM, MVS, NeRF, Depth Estimation
-						</div>
-						<br>
-					</div>
-				</div>
-			</section>
-
 			<section id="six">
 				<div class="container">
 					<header class="major" id="#six">
-						<h2>Hobbies</h2>
+						<h2>Outside Work</h2>
 					</header>
 					<div class="major">
 						<div>
 							<strong>Open Source Developer:</strong>
-							I develop custom integration for home assistant during part time. For example, 
+							I enjoy building with new hardware and software for the open source community. For example, 
 							<a href=https://github.com/manymuch/Xgimi-4-Home-Assistant title="GitHub" target="_blank" aria-hidden="true">XGIMI4HA</a>
-							 control the projector through UDP protocol and BLE Advertisement. It has more than 100 stars.
+							controls projectors through UDP and BLE advertisement protocols, and has more than 200 stars.
 						</div>
 						<br>
 					</div>

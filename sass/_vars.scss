@@ -5,7 +5,7 @@
 	// Change this to 'left' to move the header sidebar to the left-hand side
 	// of the viewport. Note that if you do this, be sure to also change
 	// sidePanel's 'side' in js/init.js.
-	$side-header:				'right';
+	$side-header:				'left';
 
 // Size.
 	$size-border-radius:		5px;
@@ -25,7 +25,7 @@
 	$color-fg-bold:				#777;	
 	$color-fg-light:			#aaa;
 
-	$color-accent-bg:			#4acaa8;
+	$color-accent-bg:			#76B900;
 	$color-accent-fg-bold:		#ffffff;
 	$color-accent-fg:			mix($color-accent-bg, $color-accent-fg-bold, 25%);
 	$color-accent-fg-light:		mix($color-accent-bg, $color-accent-fg-bold, 40%);

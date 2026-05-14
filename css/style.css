@@ -53,7 +53,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color:#4a60ca;
+			color:#76B900;
 		}
 		.fa-youtube-play:hover,.fa-file-pdf-o:hover{
 			font-size: 180%;
@@ -220,7 +220,7 @@
 	}
 
 	header.major h2 {
-		color: #4a60ca;
+		color: #76B900;
 		font-size: 2.0em;
 	}
 
@@ -363,7 +363,7 @@
 				}
 
 				ul.feature-icons li:before {
-					background: #4a60ca;
+					background: #76B900;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -501,17 +501,95 @@
 				margin-bottom: 0;
 			}
 
+/* Timeline */
+
+	.timeline-entry {
+		align-items: center;
+		display: grid;
+		grid-template-columns: 5.25em minmax(0, 1fr);
+		column-gap: 1em;
+		margin: 0 0 2.25em 0;
+	}
+
+	.timeline-body {
+		min-width: 0;
+	}
+
+	.timeline-entry.logo-top {
+		align-items: start;
+	}
+
+	.timeline-entry.no-logo {
+		display: block;
+	}
+
+	.timeline-entry.employment-entry,
+	.timeline-entry.employment-no-logo {
+		grid-template-columns: 7em minmax(0, 1fr);
+	}
+
+	.timeline-entry.employment-no-logo {
+		display: grid;
+	}
+
+	.timeline-entry.employment-no-logo:before {
+		content: '';
+	}
+
+	.timeline-entry.nvidia-entry {
+		grid-template-columns: 7em minmax(0, 1fr);
+	}
+
+	.timeline-heading {
+		align-items: center;
+		display: flex;
+		gap: 1em;
+		justify-content: space-between;
+	}
+
+	.timeline-title {
+		line-height: 1.4em;
+		min-width: 0;
+	}
+
+	.timeline-logo {
+		height: 3.8em;
+		justify-self: center;
+		object-fit: contain;
+		width: 4.4em;
+	}
+
+	.timeline-logo.nvidia-logo {
+		height: 6.4em;
+		width: 6.6em;
+	}
+
+	.timeline-logo.school-logo {
+		height: 4.5em;
+		width: 4.8em;
+	}
+
+	.timeline-when {
+		color: #777;
+		flex: 0 0 auto;
+		white-space: nowrap;
+	}
+
+	.timeline-details {
+		margin: 0.45em 0 0 0;
+	}
+
 /* Header */
 
 	#header {
-		background: #4a60ca;
-		color: #d1ddf1;
+		background: #76B900;
+		color: #f1f8e8;
 		height: 100%;
 		position: fixed;
 		text-align: center;
 		top: 0;
-		width: 21em;
-		right: 0;
+		width: 24em;
+		left: 0;
 	}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -523,11 +601,11 @@
 			}
 
 		#header header p {
-			color: #b6bce9;
+			color: #d6eeb1;
 		}
 
 		#header a {
-			color: #d1ddf1;
+			color: #f1f8e8;
 		}
 
 			#header a:hover {
@@ -537,9 +615,6 @@
 				font-size: 160%;
 				color:#00a0dc;
 			}
-			#header .fa-file-text:hover{
-				font-size: 160%;
-			}
 			#header .fa-weixin:hover{
 				font-size: 160%;
 				color:#91ED61;
@@ -548,6 +623,28 @@
 				font-size: 160%;
 				color:#333;
 			}
+
+			#header .wechat-popover {
+				display: inline-block;
+				position: relative;
+			}
+
+			#header #wxImg {
+				display: none;
+				left: 100%;
+				padding: 0.45em 0 0 0.45em;
+				position: absolute;
+				top: 100%;
+				z-index: 9999;
+			}
+
+				#header #wxImg img {
+					background: #ffffff;
+					border-radius: 5px;
+					box-shadow: 0 0.35em 1em rgba(0, 0, 0, 0.18);
+					display: block;
+					max-width: none;
+				}
 
 
 		#header > header {
@@ -563,10 +660,11 @@
 			#header > header h1 {
 				font-size: 1.75em;
 				margin: 0;
+				white-space: nowrap;
 			}
 
 			#header > header p {
-				color: #d1ddf1;
+				color: #f1f8e8;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -586,7 +684,7 @@
 			}
 
 				#header > footer .icons li a {
-					color: #b6bce9;
+					color: #d6eeb1;
 				}
 
 		#header > nav ul {
@@ -596,7 +694,7 @@
 		}
 
 			#header > nav ul li {
-				border-top: solid 2px #5469cf;
+				border-top: solid 2px #84c21a;
 				display: block;
 				padding: 0;
 			}
@@ -616,7 +714,7 @@
 
 					#header > nav ul li a.active {
 						background: #fff;
-						color: #4a60ca !important;
+						color: #76B900 !important;
 					}
 
 				#header > nav ul li:first-child {
@@ -627,7 +725,7 @@
 
 	#wrapper {
 		background: #fff;
-		padding-right: 20em;
+		padding-left: 24em;
 	}
 
 /* Main */

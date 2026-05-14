@@ -8,7 +8,7 @@
 /* Header */
 
 	#header {
-		width: 21em;
+		width: 24em;
 	}
 
 		#header > header {
@@ -22,7 +22,7 @@
 /* Wrapper */
 
 	#wrapper {
-		padding-right: 21em;
+		padding-left: 24em;
 	}
 
 /* Main */
