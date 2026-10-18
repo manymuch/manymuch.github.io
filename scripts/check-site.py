@@ -22,7 +22,7 @@ class Page(HTMLParser):
             self.ids.add(attrs['id'])
         if tag == 'meta' and attrs.get('name') == 'viewport': self.viewport = attrs.get('content', '')
         if tag == 'img' and not all(key in attrs for key in ('alt', 'width', 'height')): errors.append('Image missing alt/dimensions: ' + attrs.get('src', ''))
-        for key in ('src', 'href', 'srcset', 'data-srcset', 'poster', 'data-poster', 'data-full-src', 'data-original'):
+        for key in ('src', 'href', 'srcset', 'data-srcset', 'poster', 'data-poster', 'data-full-src', 'data-original', 'data-viewer-src', 'data-model-src'):
             value = attrs.get(key, '')
             if not value: continue
             values = value.split(',') if key.endswith('srcset') else [value]

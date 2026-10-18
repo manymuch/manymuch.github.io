@@ -7,7 +7,7 @@
 	<meta name="color-scheme" content="light dark" />
 	<meta name="description" content="Jiaxin (Jimmy) Zhang — 3D vision, spatial intelligence, and autonomous driving." />
 	<link rel="icon" type="image/jpeg" href="images/avatar.jpeg" />
-	<link rel="stylesheet" href="css/site.css?v=20261018-refactor-3" />
+	<link rel="stylesheet" href="css/site.css?v=20261018-loading-1" />
 </head>
 <body>
 	<!-- Knock out white image backgrounds while preserving the original logo colors. -->
@@ -38,16 +38,17 @@
 			</header>
 			<nav id="nav" aria-label="Main navigation">
 				<ul>
-					<li><a href="#one" class="active">Employment</a></li>
-					<li><a href="#two">Education</a></li>
-					<li><a href="#three">Publications</a></li>
+					<li><a href="#employment" class="active">Employment</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#publications">Publications</a></li>
 					<li><a href="#community">Community</a></li>
-					<li><a href="#building">Personal Projects</a></li>
+					<li><a href="#personal-projects">Personal Projects</a></li>
 				</ul>
 			</nav>
 		</section>
 		<main id="main">
-			<section id="one" aria-labelledby="employment-title">
+			<span id="one" class="section-alias" aria-hidden="true"></span>
+			<section id="employment" aria-labelledby="employment-title">
 				<div class="container">
 					<header class="major"><h2 id="employment-title">Employment</h2></header>
 					<article class="experience-company">
@@ -81,7 +82,8 @@
 					</article>
 				</div>
 			</section>
-			<section id="two" aria-labelledby="education-title">
+			<span id="two" class="section-alias" aria-hidden="true"></span>
+			<section id="education" aria-labelledby="education-title">
 				<div class="container">
 					<header class="major"><h2 id="education-title">Education</h2></header>
 					<div class="education-grid">
@@ -124,7 +126,8 @@
 					</div>
 				</div>
 			</section>
-			<section id="three" aria-labelledby="publications-title">
+			<span id="three" class="section-alias" aria-hidden="true"></span>
+			<section id="publications" aria-labelledby="publications-title">
 				<div class="container">
 					<header class="major"><h2 id="publications-title">Publications</h2><p class="section-intro">Selected work in 3D Vision and spatial intelligence</p></header>
 					<div class="features publications">
@@ -189,9 +192,10 @@
 					</div>
 					</div>
 			</section>
-			<section id="building" aria-labelledby="building-title">
+			<span id="building" class="section-alias" aria-hidden="true"></span>
+			<section id="personal-projects" aria-labelledby="personal-projects-title">
 				<div class="container">
-					<header class="major"><h2 id="building-title">Personal Projects</h2><p class="section-intro">Personal robotics, open-source software, and hands-on hardware projects.</p></header>
+					<header class="major"><h2 id="personal-projects-title">Personal Projects</h2><p class="section-intro">Personal robotics, open-source software, and hands-on hardware projects.</p></header>
 					<div class="outside-projects">
 							<article class="maker-project-with-image microduck-project">
 								<div><div class="outside-heading"><h3>Microduck · Low-cost bipedal robot replica</h3><span class="timeline-when">Since Oct. 2026</span></div><p>I am building a low-cost replica of <a href="https://github.com/pollen-robotics/microduck">Microduck</a>, an open-source bipedal robot duck. The hardware follows the <a href="https://github.com/LuwuDynamics/xgoduck_hardware">XGO-Duck open-source design</a>, using 15 FT1910 servos with a target budget under RMB 2,000 (about US$300).</p><p>My goal is to reproduce its core behaviors, including walking and rolling with reinforcement learning, then add navigation, new dance routines, and intelligent interaction.</p><span class="project-tools">Reinforcement learning · Legged robotics · Open-source hardware</span></div>
@@ -215,7 +219,7 @@
 							<article class="maker-project-with-image">
 								<div><div class="outside-heading"><h3>PCB Design &amp; Prototyping · CO₂ Monitor</h3><span class="timeline-when">2025</span></div><p>I designed a connected CO₂ sensor around the SenseAir S3 and ESP32-C6, taking it through PCB design, soldering, firmware, and integration. I also designed and 3D-printed the enclosure to complete the build.</p><span class="project-tools">PCB design · Embedded development · 3D printing</span></div>
 								<div class="project-gallery co2-gallery" role="region" aria-roledescription="carousel" aria-label="CO₂ sensor project gallery" data-carousel><div class="gallery-window"><div class="gallery-track"><figure class="gallery-slide model-panel" style="--media-ratio: 1.5">
-									<model-viewer id="co2-model" poster="images/making/co2-board-front.webp" alt="Interactive 3D model of my CO₂ sensor PCB, with ESP32 module, USB-C port, and electronic components" camera-controls touch-action="pan-y" camera-orbit="25deg 35deg 0.095m" field-of-view="30deg" min-camera-orbit="auto auto 0.025m" max-camera-orbit="auto auto 0.25m" shadow-intensity="0.6" environment-image="neutral" exposure="1.1" loading="lazy" interaction-prompt="none">
+									<model-viewer id="co2-model" data-viewer-src="js/model-viewer.umd.js?v=4.4.0" data-model-src="models/co2-sensor.glb" poster="images/making/co2-board-front-preview.webp" alt="Interactive 3D model of my CO₂ sensor PCB, with ESP32 module, USB-C port, and electronic components" camera-controls touch-action="pan-y" camera-orbit="25deg 35deg 0.095m" field-of-view="30deg" min-camera-orbit="auto auto 0.025m" max-camera-orbit="auto auto 0.25m" shadow-intensity="0.6" environment-image="neutral" exposure="1.1" loading="lazy" interaction-prompt="none">
 										<img class="model-poster" slot="poster" src="images/making/co2-board-front-preview.webp" data-original="images/making/co2-board-front.webp" alt="CO₂ sensor PCB preview" loading="lazy" width="1800" height="1800" decoding="async" />
 										<div class="model-loading" slot="progress-bar" role="status" hidden>Loading 3D model…</div>
 										<div class="model-fallback" hidden><img src="images/making/co2-board-front-preview.webp" data-original="images/making/co2-board-front.webp" alt="CO₂ sensor PCB" loading="lazy" width="1800" height="1800" decoding="async" /><span>3D view unavailable · PCB preview</span></div>
@@ -248,6 +252,7 @@
 			</div>
 			<button type="button" class="image-viewer-close" aria-label="Close image viewer" autofocus><span aria-hidden="true">×</span></button>
 		</div>
+		<div class="image-viewer-loading" hidden><span role="status" aria-live="polite"></span><button type="button" hidden>Retry</button></div>
 		<div class="image-viewer-stage">
 			<div id="image-viewer-media" class="image-viewer-media" role="region" aria-label="Enlarged project image"></div>
 			<button type="button" class="image-viewer-nav image-viewer-prev" aria-label="Previous enlarged image" hidden><svg viewBox="0 0 24 36" aria-hidden="true"><path d="M17 5 6 18l11 13" /></svg></button>
@@ -255,12 +260,12 @@
 		</div>
 	</dialog>
 	<script defer src="js/embla-carousel.umd.js"></script>
-		<script defer src="js/loading.js?v=20261018-refactor-3"></script>
-	<script defer src="js/navigation.js?v=20261018-refactor-3"></script>
+		<script defer src="js/loading.js?v=20261018-loading-1"></script>
+	<script defer src="js/navigation.js?v=20261018-loading-1"></script>
 	<script defer src="js/contacts.js?v=20261018-refactor-3"></script>
-		<script defer src="js/media-viewer.js?v=20261018-popup-muted"></script>
+		<script defer src="js/media-viewer.js?v=20261018-loading-1"></script>
 	<script defer src="js/galleries.js?v=20261018-refactor-3"></script>
-	<script defer src="js/co2-model.js?v=20261018-refactor-3"></script>
+	<script defer src="js/co2-model.js?v=20261018-loading-1"></script>
 	<script type="application/json" id="smart-home-snapshot">{"updated":"2026-10-18","repos":[{"name":"XGIMI4HA","repo":"Xgimi-4-Home-Assistant","stars":262,"history":[{"date":"2022-05-01","stargazers":"4"},{"date":"2022-07-01","stargazers":"7"},{"date":"2022-08-01","stargazers":"9"},{"date":"2022-09-01","stargazers":"10"},{"date":"2022-10-01","stargazers":"12"},{"date":"2022-11-01","stargazers":"13"},{"date":"2022-12-01","stargazers":"14"},{"date":"2023-01-01","stargazers":"15"},{"date":"2023-02-01","stargazers":"17"},{"date":"2023-03-01","stargazers":"26"},{"date":"2023-04-01","stargazers":"33"},{"date":"2023-05-01","stargazers":"37"},{"date":"2023-06-01","stargazers":"46"},{"date":"2023-07-01","stargazers":"51"},{"date":"2023-08-01","stargazers":"54"},{"date":"2023-09-01","stargazers":"58"},{"date":"2023-10-01","stargazers":"66"},{"date":"2023-11-01","stargazers":"76"},{"date":"2023-12-01","stargazers":"83"},{"date":"2024-01-01","stargazers":"91"},{"date":"2024-02-01","stargazers":"100"},{"date":"2024-03-01","stargazers":"107"},{"date":"2024-04-01","stargazers":"111"},{"date":"2024-05-01","stargazers":"114"},{"date":"2024-06-01","stargazers":"116"},{"date":"2024-07-01","stargazers":"123"},{"date":"2024-08-01","stargazers":"133"},{"date":"2024-09-01","stargazers":"137"},{"date":"2024-10-01","stargazers":"142"},{"date":"2024-11-01","stargazers":"149"},{"date":"2024-12-01","stargazers":"160"},{"date":"2025-01-01","stargazers":"170"},{"date":"2025-02-01","stargazers":"175"},{"date":"2025-03-01","stargazers":"183"},{"date":"2025-04-01","stargazers":"186"},{"date":"2025-05-01","stargazers":"187"},{"date":"2025-06-01","stargazers":"190"},{"date":"2025-07-01","stargazers":"198"},{"date":"2025-08-01","stargazers":"202"},{"date":"2025-09-01","stargazers":"204"},{"date":"2025-10-01","stargazers":"205"},{"date":"2025-11-01","stargazers":"207"},{"date":"2026-01-01","stargazers":"211"},{"date":"2026-02-01","stargazers":"214"},{"date":"2026-05-01","stargazers":"215"},{"date":"2026-09-01","stargazers":"218"},{"date":"2026-10-01","stargazers":"221"}]},{"name":"HisenseHA","repo":"HisenseHA","stars":92,"history":[{"date":"2024-06-01","stargazers":"5"},{"date":"2024-07-01","stargazers":"10"},{"date":"2024-08-01","stargazers":"15"},{"date":"2024-09-01","stargazers":"17"},{"date":"2024-10-01","stargazers":"19"},{"date":"2024-12-01","stargazers":"23"},{"date":"2025-01-01","stargazers":"25"},{"date":"2025-02-01","stargazers":"26"},{"date":"2025-03-01","stargazers":"27"},{"date":"2025-05-01","stargazers":"31"},{"date":"2025-06-01","stargazers":"37"},{"date":"2025-07-01","stargazers":"40"},{"date":"2025-08-01","stargazers":"42"},{"date":"2025-09-01","stargazers":"45"},{"date":"2025-11-01","stargazers":"48"},{"date":"2026-02-01","stargazers":"49"},{"date":"2026-03-01","stargazers":"50"},{"date":"2026-09-01","stargazers":"56"},{"date":"2026-10-01","stargazers":"59"}]}],"countries":[{"country_code":"CN","percentage":"0.5778","stargazers":"26"},{"country_code":"RU","percentage":"0.0889","stargazers":"4"},{"country_code":"US","percentage":"0.0889","stargazers":"4"},{"country_code":"GB","percentage":"0.0667","stargazers":"3"},{"country_code":"AR","percentage":"0.0222","stargazers":"1"},{"country_code":"AU","percentage":"0.0222","stargazers":"1"},{"country_code":"PL","percentage":"0.0222","stargazers":"1"},{"country_code":"FR","percentage":"0.0222","stargazers":"1"},{"country_code":"KR","percentage":"0.0222","stargazers":"1"},{"country_code":"DE","percentage":"0.0222","stargazers":"1"},{"country_code":"IN","percentage":"0.0222","stargazers":"1"},{"country_code":"CH","percentage":"0.0222","stargazers":"1"}]}</script>
 	<script defer src="js/smart-home.js?v=20261018-refactor-3"></script>
 </body>
