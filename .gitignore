@@ -1,3 +1,9 @@
+# OS metadata
+.DS_Store
+
+# Optional local asset tooling
+node_modules/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
