@@ -63,7 +63,7 @@
         var location = document.createElement('span'); location.textContent = link.dataset.location; metadata.appendChild(location);
       }
     }
-    media.setAttribute('aria-label', isVideo ? 'Conference presentation video' : 'Enlarged image');
+    media.setAttribute('aria-label', isVideo ? link.dataset.title || 'Video' : 'Enlarged image');
     previous.hidden = next.hidden = group.length < 2;
     media.scrollTop = media.scrollLeft = 0;
     showFeedback(isVideo ? 'Loading video…' : 'Loading full image…', false);
@@ -115,7 +115,7 @@
       if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.defaultPrevented) return;
       event.preventDefault(); opener = link;
       var container = link.closest('.project-gallery, .conference-gallery');
-      group = container ? Array.from(container.querySelectorAll('.publication-image, .conference-photo, .conference-video, .maker-image')) : [link];
+      group = container ? Array.from(container.querySelectorAll('.publication-image, .conference-photo, .conference-video, .maker-image')).filter(function (item) { return !item.closest('[data-loop-copy]'); }) : [link];
       index = group.indexOf(link);
       viewer.showModal(); render(link);
       document.body.classList.add('image-viewer-open'); viewer.dispatchEvent(new Event('vieweropen'));
